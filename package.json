@@ -1,5 +1,5 @@
-{
-  "name": "@hexlet/code",
+ 
+{  "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions)",
   "main": "index.js",
@@ -7,5 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "type": "module", 
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+}
 }
