@@ -1,16 +1,10 @@
- 
-{  "name": "@hexlet/code",
-  "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  
-  "type": "module", 
-  "bin": {
-  "brain-games": "bin/brain-games.js"
-}
-}
+{"name":"@hexlet/code",
+"version":"1.0.0",
+"description":"[![Actions Status](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/JF-IndependentDev/fullstack-javascript-project-98/actions)",
+"main":"bin/brain-games.js",
+"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},
+"author":"",
+"license":"ISC",
+"type":"module",
+"bin":{"brain-games":"bin/brain-games.js"},
+"dependencies":{"readline-sync":"^1.4.10"}}
