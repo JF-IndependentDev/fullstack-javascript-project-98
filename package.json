@@ -10,17 +10,21 @@
     "license": "ISC",
     "type": "module",
     "bin": {
+        "brain-calc": "bin/brain-calc.js",
         "brain-games": "bin/brain-games.js",
         "brain-even": "bin/brain-even.js"
     },
     "dependencies": {
+        "@hexlet/pairs": "^1.1.1",
         "readline-sync": "^1.4.10"
     },
     "devDependencies": {
         "@eslint/js": "^9.18.0",
-        "eslint": "^8.57.0",
+        "eslint": "^8.57.1",
         "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^10.0.1",
         "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.3",
         "globals": "^15.14.0",
         "prettier": "^3.4.2"
     }
