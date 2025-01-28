@@ -36,7 +36,7 @@ while (respuestasCorrectas < 3) {
       `'${userAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`,
     );
     console.log(`¡Intentémoslo de nuevo, ${userName}!`);
-    respuestasCorrectas = 0;
+    break;
   }
 }
 if (respuestasCorrectas === 3) {
