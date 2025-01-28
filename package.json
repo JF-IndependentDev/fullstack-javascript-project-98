@@ -13,7 +13,8 @@
         "brain-calc": "bin/brain-calc.js",
         "brain-games": "bin/brain-games.js",
         "brain-even": "bin/brain-even.js",
-        "brain-gcd": "bin/brain-gcd.js"
+        "brain-gcd": "bin/brain-gcd.js",
+        "brain-progression": "bin/brain-progression.js"
     },
     "dependencies": {
         "@hexlet/pairs": "^1.1.1",
