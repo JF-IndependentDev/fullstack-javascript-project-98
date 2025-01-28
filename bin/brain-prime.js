@@ -30,21 +30,19 @@ while (correctAnswers < 3) {
   ) {
     console.log("¡Correcto!");
     correctAnswers += 1;
+  } else if (userAnswer === "yes") {
+    console.log(
+      "'yes' es una respuesta incorrecta ;(. La respuesta correcta era 'no'",
+    );
+    break;
+  } else if (userAnswer === "no") {
+    console.log(
+      "'no' es una respuesta incorrecta ;(. La respuesta correcta era 'yes'",
+    );
+    break;
   } else {
-    if (userAnswer === "yes") {
-      console.log(
-        "'yes' es una respuesta incorrecta ;(. La respuesta correcta era 'no'",
-      );
-      break;
-    } else if (userAnswer === "no") {
-      console.log(
-        "'no' es una respuesta incorrecta ;(. La respuesta correcta era 'yes'",
-      );
-      break;
-    } else {
-      console.log("respuesta incorrecta");
-      break;
-    }
+    console.log("respuesta incorrecta");
+    break;
   }
   if (correctAnswers === 3) {
     console.log(`¡Felicidades, ${userName}!`);
