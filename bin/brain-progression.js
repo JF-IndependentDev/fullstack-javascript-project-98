@@ -24,7 +24,8 @@ while (respuestasCorrectas < 3) {
   }
   const correctAnswer = progression[spotFromProgression];
   progression[spotFromProgression] = " ..";
-  console.log(`Pregunta: ${progression.toString()}`);
+  const finalProgression = progression.join(" ");
+  console.log(`Pregunta: ${finalProgression.toString()}`);
 
   const userAnswer = readlineSync.question("Tu respuesta:");
 
