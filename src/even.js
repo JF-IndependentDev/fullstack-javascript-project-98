@@ -18,8 +18,7 @@ const runEven = () => {
     const userAnswer = readlineSync.question();
 
     if (
-      (isEven(number) === true && userAnswer === 'yes') 
-      ||
+      (isEven(number) === true && userAnswer === 'yes') ||
       (isEven(number) === false && userAnswer === 'no')
     ) {
       console.log('¡Correcto!');

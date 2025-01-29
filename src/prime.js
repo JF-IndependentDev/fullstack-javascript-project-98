@@ -25,8 +25,8 @@ const runPrime = () => {
     const userAnswer = readlineSync.question();
 
     if (
-      (isPrime(number) && userAnswer === 'yes')
-      || (!isPrime(number) && userAnswer === 'no')
+      (isPrime(number) && userAnswer === 'yes') ||
+      (!isPrime(number) && userAnswer === 'no')
     ) {
       console.log('¡Correcto!');
       correctAnswers += 1;
