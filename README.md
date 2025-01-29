@@ -6,4 +6,4 @@
 2. brain-calc: https://asciinema.org/a/ergDM7pRhrcHx2mJkk3N4sbv8
 3. brain-gcd:  https://asciinema.org/a/cl4RYrmFKHmtKvZIGxchf932Z
 4. brain-progression: https://asciinema.org/a/0FlM9CUk8sPqb4lZn8modaTTP
-5. brain-prime: https://asciinema.org/a/FDQBNAZRQYvzXtTR0i0UusFRd
+5. brain-prime: https://asciinema.org/a/9Zrm89Dn5c9rVCCcB1yFnb1DG

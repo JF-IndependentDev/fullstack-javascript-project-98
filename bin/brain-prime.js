@@ -12,7 +12,7 @@ while (correctAnswers < 3) {
   const number = Math.floor(Math.random() * (100 - 1)) + 1;
   const isPrime = () => {
     if (number <= 1) return false;
-    for (let i = 2; Math.sqrt(number); i += 1) {
+    for (let i = 2; i * i <= number; i += 1) {
       if (number % i === 0) {
         return false;
       }
@@ -25,8 +25,8 @@ while (correctAnswers < 3) {
   const userAnswer = readlineSync.question();
 
   if (
-    (isPrime(number) === true && userAnswer === "yes") ||
-    (isPrime(number) === false && userAnswer === "no")
+    (isPrime(number) && userAnswer === "yes") ||
+    (!isPrime(number) && userAnswer === "no")
   ) {
     console.log("¡Correcto!");
     correctAnswers += 1;
