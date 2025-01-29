@@ -10,7 +10,7 @@ let respuestasCorrectas = 0;
 while (respuestasCorrectas < 3) {
   const progression = [];
   const firstNumber = Math.floor(Math.random() * (100 - 1));
-  const length = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+  const length = Math.floor(Math.random() * (10 - 6 + 1)) + 6;
   const sequence = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
   const spotFromProgression = Math.floor(Math.random() * (length - 1 + 1));
 
