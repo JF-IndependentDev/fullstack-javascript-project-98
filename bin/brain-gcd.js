@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import { cons, car, cdr } from '@hexlet/pairs';
-import { greeting } from '../src/cli.js';
+import greeting from '../src/cli.js';
 
 const userName = greeting();
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { greeting } from '../src/cli.js';
+import greeting from '../src/cli.js';
 
 const userName = greeting();
 
@@ -18,8 +18,8 @@ while (correctAnswers < 3) {
   const userAnswer = readlineSync.question();
 
   if (
-    (isEven(number) === true && userAnswer === 'yes') ||
-    (isEven(number) === false && userAnswer === 'no')
+    (isEven(number) === true && userAnswer === 'yes')
+    || (isEven(number) === false && userAnswer === 'no')
   ) {
     console.log('¡Correcto!');
     correctAnswers += 1;
