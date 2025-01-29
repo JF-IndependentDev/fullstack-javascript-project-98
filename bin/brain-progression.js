@@ -23,7 +23,7 @@ while (respuestasCorrectas < 3) {
     progression.push(x);
   }
   const correctAnswer = progression[spotFromProgression];
-  progression[spotFromProgression] = " ..";
+  progression[spotFromProgression] = "..";
   const finalProgression = progression.join(" ");
   console.log(`Pregunta: ${finalProgression.toString()}`);
 
