@@ -25,7 +25,7 @@ while (correctAnswers < 3) {
   const userAnswer = readlineSync.question();
 
   if (
-    (isPrime(number) && userAnswer === 'yes') 
+    (isPrime(number) && userAnswer === 'yes')
     || (!isPrime(number) && userAnswer === 'no')
   ) {
     console.log('¡Correcto!');
