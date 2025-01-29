@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import { cons, car, cdr } from "@hexlet/pairs";
-import { greeting } from "../src/cli.js";
+import readlineSync from 'readline-sync';
+import { cons, car, cdr } from '@hexlet/pairs';
+import { greeting } from '../src/cli.js';
 
 const userName = greeting();
 
-console.log("Encuentra el máximo común divisor de los números dados.");
+console.log('Encuentra el máximo común divisor de los números dados.');
 
 let respuestasCorrectas = 0;
 
@@ -31,10 +31,10 @@ while (respuestasCorrectas < 3) {
   const num2 = cdr(pair);
   const gcd = greatestCommonDivisor(num1, num2);
 
-  const userAnswer = readlineSync.question("Tu respuesta:");
+  const userAnswer = readlineSync.question('Tu respuesta:');
 
   if (parseInt(userAnswer, 10) === gcd) {
-    console.log("¡Correcto!");
+    console.log('¡Correcto!');
     respuestasCorrectas += 1;
   } else {
     console.log(

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import { greeting } from "../src/cli.js";
+import readlineSync from 'readline-sync';
+import { greeting } from '../src/cli.js';
 
 const userName = greeting();
 
-console.log("¿Qué número falta en la progresión?");
+console.log('¿Qué número falta en la progresión?');
 let respuestasCorrectas = 0;
 
 while (respuestasCorrectas < 3) {
@@ -23,14 +23,14 @@ while (respuestasCorrectas < 3) {
     progression.push(x);
   }
   const correctAnswer = progression[spotFromProgression];
-  progression[spotFromProgression] = "..";
-  const finalProgression = progression.join(" ");
+  progression[spotFromProgression] = '..';
+  const finalProgression = progression.join(' ');
   console.log(`Pregunta: ${finalProgression.toString()}`);
 
-  const userAnswer = readlineSync.question("Tu respuesta:");
+  const userAnswer = readlineSync.question('Tu respuesta:');
 
   if (parseInt(userAnswer, 10) === correctAnswer) {
-    console.log("¡Correcto!");
+    console.log('¡Correcto!');
     respuestasCorrectas += 1;
   } else {
     console.log(

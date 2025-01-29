@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import { cons, car, cdr } from "@hexlet/pairs";
-import { greeting } from "../src/cli.js";
+import readlineSync from 'readline-sync';
+import { cons, car, cdr } from '@hexlet/pairs';
+import { greeting } from '../src/cli.js';
 
 const userName = greeting();
 
-console.log("¿Cuál es el resultado de la expresión?");
+console.log('¿Cuál es el resultado de la expresión?');
 
 let respuestasCorrectas = 0;
 
@@ -14,7 +14,7 @@ while (respuestasCorrectas < 3) {
     Math.floor(Math.random() * (100 - 1)),
     Math.floor(Math.random() * (100 - 1)),
   );
-  const operators = ["+", "-", "*"];
+  const operators = ['+', '-', '*'];
   const random = Math.floor(Math.random() * operators.length);
 
   const correctAnswer = () => {
@@ -35,10 +35,10 @@ while (respuestasCorrectas < 3) {
 
   console.log(`Pregunta: ${car(pair)} ${operators[random]} ${cdr(pair)}`);
 
-  const userAnswer = readlineSync.question("Tu respuesta:");
+  const userAnswer = readlineSync.question('Tu respuesta:');
 
   if (parseInt(userAnswer, 10) === correctAnswer()) {
-    console.log("¡Correcto!");
+    console.log('¡Correcto!');
     respuestasCorrectas += 1;
   } else {
     console.log(
