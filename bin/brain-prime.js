@@ -34,17 +34,17 @@ while (correctAnswers < 3) {
     console.log(
       "'yes' es una respuesta incorrecta ;(. La respuesta correcta era 'no'",
     );
-    console.log(`¡Intentémoslo de nuevo, ${userAnswer}!`);
+    console.log(`¡Intentémoslo de nuevo, ${userName}!`);
     break;
   } else if (userAnswer === "no") {
     console.log(
       "'no' es una respuesta incorrecta ;(. La respuesta correcta era 'yes'",
     );
-    console.log(`¡Intentémoslo de nuevo, ${userAnswer}!`);
+    console.log(`¡Intentémoslo de nuevo, ${userName}!`);
     break;
   } else {
     console.log("respuesta incorrecta");
-    console.log(`¡Intentémoslo de nuevo, ${userAnswer}!`);
+    console.log(`¡Intentémoslo de nuevo, ${userName}!`);
     break;
   }
   if (correctAnswers === 3) {
